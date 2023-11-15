@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+:root {
+
+    --background: #171717;
+    --btn: #414141;
+    --btn-hover: #292929;
+    --btn-click: #1C1C1C;
+    --result: #00C896;
+    --result-hover: #C8FCEA;
+
+}
+.container {
+    max-width: 1140px;
+    /* Defina a largura máxima desejada */
+    margin-left: auto;
+    /* Centralize o conteúdo horizontalmente */
+    margin-right: auto;
+    padding: 0 15px;
+    /* Adicione margem interna para evitar que o conteúdo alcance as bordas da largura máxima */
+}
+
+main {
+    display: flex;  
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    color: #ffff;
+    border-radius: 9px;
+    font-size: 12px
+}
+.top p:hover {
+    color: var(--btn);
+}
+.wrapper-calc {
+    width: 400px;
+    height: 530px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #ffff;
+    background-color: var(--background);
+    box-shadow: -2px 2px 12px 0 var(--btn);
+    border-radius: 9px;
+}
+.display {
+    width: 100%;
+    height: 119px;
+    margin: 15px 0 15px 0;
+
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--btn);
+    border: 1px solid var(--background);
+    border-radius: 9px;
+    font-size: 26px;
+}
+.wrapper-buttons button{
+    font-size: 18px;
+}
+.wrapper-buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.btns-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btns-two{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btns-three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btns-four{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btns-five{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#zero {
+    width: 100%;
+}
+.btn-numbers {
+    color: #ffff;
+    background-color: var(--btn);
+    border: none;
+    border-radius: 2px;
+    width: 80px;
+    height: 60px;
+}
+#equal {
+    background-color: #008FC8;
+}
+#equal:hover{
+    background-color: #0065BB;
+}
+#equal:active {
+    background-color: #000067;
+}
+.operations button{
+    background-color: var(--btn-hover);
+}
+.operations button:hover{
+    background-color: var(--btn);
+}
+
+.btn-numbers:hover {
+    background-color: var(--btn-hover);
+}
+.btn-numbers:active{
+    background-color: #1C1C1C;
+}
+.operations button:active {
+    background-color: #1C1C1C;
+}
